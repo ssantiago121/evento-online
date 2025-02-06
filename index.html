@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Online</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonte Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Eventos<span class="highlight">Online</span></div>
+        <div class="search-box">
+            <span class="material-symbols-outlined">
+                search
+            </span>
+            <input type="text" placeholder="Busque o evento aqui">
+        </div>
+        <div class="icons">
+            <span class="material-symbols-outlined">
+                home
+            </span>
+            <span class="material-symbols-outlined">
+                favorite
+            </span>
+            <span class="material-symbols-outlined">
+                notifications
+            </span>
+            <img src="img/profile.jpeg" class="profile-image" alt="Perfil">
+        </div>
+    </header>
+
+    <main class="container-main">
+        <div class="container-wrapper">
+            <div class="container">
+                <section class="event-card">
+                    <div class="event-info">
+                        <p class="event-name">Nome do evento</p>
+                        <p class="event-date">15/02/25 - 18:00 - 23:00</p>
+                        <span class="material-symbols-outlined icon-location">
+                            location_on
+                        </span>
+                        <span class="event-location">João Pessoa, Paraíba</span>
+                    </div>
+                    <div class="image-card">
+                        <img class="image-card-event" src="./img/evento1.jpg" alt="Evento 1">
+                    </div>
+                </section>
+                
+    
+                <section class="event-card">
+                    <div class="event-info">
+                        <p class="event-name">Visitar Santiago</p>
+                        <p class="event-date">15/02/25 - 18:00 - 23:00</p>
+                        <span class="material-symbols-outlined icon-location">
+                            location_on
+                        </span>
+                        <span class="event-location">João Pessoa, Paraíba</span>
+                    </div>
+                    <div class="image-card">
+                        <img class="image-card-event" src="./img/evento2.jpg" alt="Evento 1">
+                    </div>
+                </section>
+    
+                <section class="event-card">
+                    <div class="event-info">
+                        <p class="event-name">Workshop sobre Python</p>
+                        <p class="event-date">15/02/25 - 18:00 - 23:00</p>
+                        <span class="material-symbols-outlined icon-location">
+                            location_on
+                        </span>
+                        <span class="event-location">Recife, Pernambuco</span>
+                    </div>
+                    <div class="image-card">
+                        <img class="image-card-event" src="./img/evento3.jpg" alt="Evento 1">
+                    </div>
+                </section>
+    
+                <section class="event-card">
+                    <div class="event-info">
+                        <p class="event-name">Workshop Mentoria TipsCode</p>
+                        <p class="event-date">15/02/25 - 18:00 - 23:00</p>
+                        <span class="material-symbols-outlined icon-location">
+                            location_on
+                        </span>
+                        <span class="event-location">Blumenau, Santa Catarina</span>
+                    </div>
+                    <div class="image-card">
+                        <img class="image-card-event" src="./img/evento4.jpg" alt="Evento 1">
+                    </div>
+                </section>
+            </div>
+            
+            <div class="divider"></div>
+
+            <section class="event-form">
+                <form class="form">
+                    <div>
+                        <label for="nome">Nome do evento</label>
+                        <input type="text" id="nome" name="nome" placeholder="Coloque o nome aqui">
+                    </div>
+                    <div>
+                        <label for="local-evento">Local do Evento</label>
+                        <select placeholder="Blumenau, Santa Catarina">
+                            <option>Blumenau, Santa Catarina</option>
+                            <option>João Pessoa, Paraíba</option>
+                            <option>Recife, Pernambuco</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="descrição-evento">Descrição do evento</label>
+                        <input type="text" id="descrição-evento" name="descrição-evento" placeholder="O evento é um workshop sobre...">
+                    </div>
+                     <div>
+                        <label for="capacidade-permitida">Capacidade permitida</label>
+                        <select>
+                            <option>100 pessoas</option>
+                            <option>150 pessoas</option>
+                            <option>200 pessoas</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="Data de Início">Data de início</label>
+                        <input type="date" placeholder="Data de Início">
+                    </div>
+                    <div>
+                        <label for="organizador-evento">Organizador do evento</label>
+                        <input type="text" id="organizador-evento" name="organizador-evento" placeholder="TipsCode">
+                    </div>
+                    <div>
+                        <label for="Data de Fim">Data de fim</label>
+                        <input type="date" placeholder="Data de Fim">
+                    </div>
+                    <div>
+                        <label for="Tipo de Evento">Tipo de evento</label>
+                        <select>
+                            <option>Workshop</option>
+                            <option>Palestra</option>
+                            <option>Seminário</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="Tipo de Evento">Foto do local do evento ou cantores</label>
+                        <input type="file" id="Tipo de Evento" name="Tipo de Evento" placeholder="Cole a URL da sua imagem aqui">
+                    </div>
+
+                    <label><input type="checkbox"> Concluir o cadastro é obrigatório aceite as regras. <span class="text-color">Política de Privacidade</span></label>
+                    
+                    <button class="submit-btn">Cadastre seu evento</button>
+                </form>
+            </section>
+
+        </div>
+
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Todos os direitos reservados - Eventos <span>Online</span></p>
+    </footer>
+    
+</body>
+</html>
